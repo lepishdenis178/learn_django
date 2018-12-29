@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.views.generic import CreateView, UpdateView
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
+from django.shortcuts import render, get_object_or_404
 
 from .forms import PostForm
 from .models import Post
@@ -37,10 +38,16 @@ class PostCreateView(LoginRequiredMixin, CreateView):
             post.save()
             return redirect('post_detail', pk=post.pk)
 
-class PostUpdateView(LoginRequiredMixin, UpdateView):
-    template_name = 'blog/post_edit.html'
-
-
-    def get_success_url(self):
-        return redirect('post_edit', pk=post.pk)
-
+def post_edit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'blog/post_edit.html', {'form': form})

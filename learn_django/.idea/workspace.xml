@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="510">
+              <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -77,8 +77,8 @@
         <option value="$PROJECT_DIR$/blog/templates/blog/post_edit.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/post_list.html" />
         <option value="$PROJECT_DIR$/blog/static/css/blog.css" />
-        <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/base.html" />
+        <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
       </list>
     </option>
@@ -95,6 +95,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,7 +107,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,11 +189,13 @@
       <workItem from="1545924632352" duration="1600000" />
       <workItem from="1545934054444" duration="1150000" />
       <workItem from="1545984825771" duration="2625000" />
+      <workItem from="1546008058040" duration="59000" />
+      <workItem from="1546027462893" duration="359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70555000" />
+    <option name="totallyTimeSpent" value="70973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -207,8 +209,8 @@
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1286" height="1005" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8355932" visible="true" weight="0.16397415" />
-      <window_info id="Structure" order="1" sideWeight="0.16440678" side_tool="true" visible="true" weight="0.16397415" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83164006" visible="true" weight="0.16882068" />
+      <window_info id="Structure" order="1" sideWeight="0.16835994" side_tool="true" visible="true" weight="0.16882068" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -221,8 +223,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32992035" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.503231" side_tool="true" weight="0.21704546" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" weight="0.21615472" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.3287827" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49676898" visible="true" weight="0.21615472" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3287827" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -374,13 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/css/blog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -388,10 +383,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="510">
+          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
