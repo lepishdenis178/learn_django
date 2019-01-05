@@ -6,6 +6,8 @@ from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 from django.shortcuts import render, get_object_or_404
 
+from django.contrib.auth.decorators import login_required
+
 from .forms import PostForm
 from .models import Post
 
@@ -23,7 +25,6 @@ class PostDetailView(DetailView):
     model = Post
     context_object_name = 'post'
     template_name = 'blog/post_detail.html'
-
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     form_class = PostForm
@@ -51,3 +52,8 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def post_remove(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.delete()
+    return redirect('post_list')
