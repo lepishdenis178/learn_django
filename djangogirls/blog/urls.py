@@ -3,9 +3,6 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
-    url(r'^signup/$', views.signup, name='signup'),
-    url(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
-        views.activate, name='activate'),
     url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
@@ -13,7 +10,4 @@ urlpatterns = [
     path('drafts/', views.post_draft_list, name='post_draft_list'),
     path('post/<pk>/publish/', views.post_publish, name='post_publish'),
     path('post/<pk>/remove/', views.post_remove, name='post_remove'),
-    path('post/<int:pk>/comment/', views.add_comment_to_post, name='add_comment_to_post'),
-    path('comment/<int:pk>/approve/', views.comment_approve, name='comment_approve'),
-    path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
 ]
